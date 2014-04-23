@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848B03B019074AA900F4D74B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03AF19074AA900F4D74B /* Foundation.framework */; };
+		848B03B219074AA900F4D74B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03B119074AA900F4D74B /* CoreGraphics.framework */; };
+		848B03B419074AA900F4D74B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03B319074AA900F4D74B /* UIKit.framework */; };
+		848B03BA19074AA900F4D74B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848B03B819074AA900F4D74B /* InfoPlist.strings */; };
+		848B03BC19074AA900F4D74B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B03BB19074AA900F4D74B /* main.m */; };
+		848B03C019074AA900F4D74B /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B03BF19074AA900F4D74B /* BLAppDelegate.m */; };
+		848B03C219074AA900F4D74B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848B03C119074AA900F4D74B /* Images.xcassets */; };
+		848B03C919074AA900F4D74B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03C819074AA900F4D74B /* XCTest.framework */; };
+		848B03CA19074AA900F4D74B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03AF19074AA900F4D74B /* Foundation.framework */; };
+		848B03CB19074AA900F4D74B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03B319074AA900F4D74B /* UIKit.framework */; };
+		848B03D319074AA900F4D74B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848B03D119074AA900F4D74B /* InfoPlist.strings */; };
+		848B03D519074AA900F4D74B /* ManagerMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B03D419074AA900F4D74B /* ManagerMoneyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848B03CC19074AA900F4D74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848B03A419074AA900F4D74B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848B03AB19074AA900F4D74B;
+			remoteInfo = ManagerMoney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		848B03AC19074AA900F4D74B /* ManagerMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagerMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848B03AF19074AA900F4D74B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		848B03B119074AA900F4D74B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		848B03B319074AA900F4D74B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		848B03B719074AA900F4D74B /* ManagerMoney-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManagerMoney-Info.plist"; sourceTree = "<group>"; };
+		848B03B919074AA900F4D74B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		848B03BB19074AA900F4D74B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848B03BD19074AA900F4D74B /* ManagerMoney-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManagerMoney-Prefix.pch"; sourceTree = "<group>"; };
+		848B03BE19074AA900F4D74B /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
+		848B03BF19074AA900F4D74B /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
+		848B03C119074AA900F4D74B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		848B03C719074AA900F4D74B /* ManagerMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagerMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848B03C819074AA900F4D74B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		848B03D019074AA900F4D74B /* ManagerMoneyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManagerMoneyTests-Info.plist"; sourceTree = "<group>"; };
+		848B03D219074AA900F4D74B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		848B03D419074AA900F4D74B /* ManagerMoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerMoneyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848B03A919074AA900F4D74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03B219074AA900F4D74B /* CoreGraphics.framework in Frameworks */,
+				848B03B419074AA900F4D74B /* UIKit.framework in Frameworks */,
+				848B03B019074AA900F4D74B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848B03C419074AA900F4D74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03C919074AA900F4D74B /* XCTest.framework in Frameworks */,
+				848B03CB19074AA900F4D74B /* UIKit.framework in Frameworks */,
+				848B03CA19074AA900F4D74B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848B03A319074AA900F4D74B = {
+			isa = PBXGroup;
+			children = (
+				848B03B519074AA900F4D74B /* ManagerMoney */,
+				848B03CE19074AA900F4D74B /* ManagerMoneyTests */,
+				848B03AE19074AA900F4D74B /* Frameworks */,
+				848B03AD19074AA900F4D74B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848B03AD19074AA900F4D74B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848B03AC19074AA900F4D74B /* ManagerMoney.app */,
+				848B03C719074AA900F4D74B /* ManagerMoneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848B03AE19074AA900F4D74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848B03AF19074AA900F4D74B /* Foundation.framework */,
+				848B03B119074AA900F4D74B /* CoreGraphics.framework */,
+				848B03B319074AA900F4D74B /* UIKit.framework */,
+				848B03C819074AA900F4D74B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848B03B519074AA900F4D74B /* ManagerMoney */ = {
+			isa = PBXGroup;
+			children = (
+				848B03BE19074AA900F4D74B /* BLAppDelegate.h */,
+				848B03BF19074AA900F4D74B /* BLAppDelegate.m */,
+				848B03C119074AA900F4D74B /* Images.xcassets */,
+				848B03B619074AA900F4D74B /* Supporting Files */,
+			);
+			path = ManagerMoney;
+			sourceTree = "<group>";
+		};
+		848B03B619074AA900F4D74B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848B03B719074AA900F4D74B /* ManagerMoney-Info.plist */,
+				848B03B819074AA900F4D74B /* InfoPlist.strings */,
+				848B03BB19074AA900F4D74B /* main.m */,
+				848B03BD19074AA900F4D74B /* ManagerMoney-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848B03CE19074AA900F4D74B /* ManagerMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				848B03D419074AA900F4D74B /* ManagerMoneyTests.m */,
+				848B03CF19074AA900F4D74B /* Supporting Files */,
+			);
+			path = ManagerMoneyTests;
+			sourceTree = "<group>";
+		};
+		848B03CF19074AA900F4D74B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848B03D019074AA900F4D74B /* ManagerMoneyTests-Info.plist */,
+				848B03D119074AA900F4D74B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848B03AB19074AA900F4D74B /* ManagerMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848B03D819074AA900F4D74B /* Build configuration list for PBXNativeTarget "ManagerMoney" */;
+			buildPhases = (
+				848B03A819074AA900F4D74B /* Sources */,
+				848B03A919074AA900F4D74B /* Frameworks */,
+				848B03AA19074AA900F4D74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManagerMoney;
+			productName = ManagerMoney;
+			productReference = 848B03AC19074AA900F4D74B /* ManagerMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848B03C619074AA900F4D74B /* ManagerMoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848B03DB19074AA900F4D74B /* Build configuration list for PBXNativeTarget "ManagerMoneyTests" */;
+			buildPhases = (
+				848B03C319074AA900F4D74B /* Sources */,
+				848B03C419074AA900F4D74B /* Frameworks */,
+				848B03C519074AA900F4D74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848B03CD19074AA900F4D74B /* PBXTargetDependency */,
+			);
+			name = ManagerMoneyTests;
+			productName = ManagerMoneyTests;
+			productReference = 848B03C719074AA900F4D74B /* ManagerMoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848B03A419074AA900F4D74B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "BRUCE LAU";
+				TargetAttributes = {
+					848B03C619074AA900F4D74B = {
+						TestTargetID = 848B03AB19074AA900F4D74B;
+					};
+				};
+			};
+			buildConfigurationList = 848B03A719074AA900F4D74B /* Build configuration list for PBXProject "ManagerMoney" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 848B03A319074AA900F4D74B;
+			productRefGroup = 848B03AD19074AA900F4D74B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848B03AB19074AA900F4D74B /* ManagerMoney */,
+				848B03C619074AA900F4D74B /* ManagerMoneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848B03AA19074AA900F4D74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03BA19074AA900F4D74B /* InfoPlist.strings in Resources */,
+				848B03C219074AA900F4D74B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848B03C519074AA900F4D74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03D319074AA900F4D74B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848B03A819074AA900F4D74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03C019074AA900F4D74B /* BLAppDelegate.m in Sources */,
+				848B03BC19074AA900F4D74B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848B03C319074AA900F4D74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B03D519074AA900F4D74B /* ManagerMoneyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848B03CD19074AA900F4D74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848B03AB19074AA900F4D74B /* ManagerMoney */;
+			targetProxy = 848B03CC19074AA900F4D74B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		848B03B819074AA900F4D74B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848B03B919074AA900F4D74B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		848B03D119074AA900F4D74B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848B03D219074AA900F4D74B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848B03D619074AA900F4D74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		848B03D719074AA900F4D74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848B03D919074AA900F4D74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagerMoney/ManagerMoney-Prefix.pch";
+				INFOPLIST_FILE = "ManagerMoney/ManagerMoney-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		848B03DA19074AA900F4D74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagerMoney/ManagerMoney-Prefix.pch";
+				INFOPLIST_FILE = "ManagerMoney/ManagerMoney-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		848B03DC19074AA900F4D74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagerMoney.app/ManagerMoney";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagerMoney/ManagerMoney-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ManagerMoneyTests/ManagerMoneyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		848B03DD19074AA900F4D74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagerMoney.app/ManagerMoney";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagerMoney/ManagerMoney-Prefix.pch";
+				INFOPLIST_FILE = "ManagerMoneyTests/ManagerMoneyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848B03A719074AA900F4D74B /* Build configuration list for PBXProject "ManagerMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848B03D619074AA900F4D74B /* Debug */,
+				848B03D719074AA900F4D74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848B03D819074AA900F4D74B /* Build configuration list for PBXNativeTarget "ManagerMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848B03D919074AA900F4D74B /* Debug */,
+				848B03DA19074AA900F4D74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		848B03DB19074AA900F4D74B /* Build configuration list for PBXNativeTarget "ManagerMoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848B03DC19074AA900F4D74B /* Debug */,
+				848B03DD19074AA900F4D74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848B03A419074AA900F4D74B /* Project object */;
+}
