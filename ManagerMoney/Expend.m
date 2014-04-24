@@ -11,7 +11,8 @@
 
 @implementation Expend
 
-@dynamic money;
 @dynamic category;
+@dynamic money;
+@dynamic data;
 
 @end

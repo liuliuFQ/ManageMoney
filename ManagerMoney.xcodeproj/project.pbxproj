@@ -34,9 +34,9 @@
 		0FA3B01C1908EF8500E74D32 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3AFFD1908EF8500E74D32 /* MagicalRecord+ShorthandSupport.m */; };
 		0FA3B01D1908EF8500E74D32 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3AFFF1908EF8500E74D32 /* MagicalRecord.m */; };
 		0FA3B01F1908EFBD00E74D32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA3B01E1908EFBD00E74D32 /* CoreData.framework */; };
+		0FA3B025190918E100E74D32 /* Expend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3B024190918E100E74D32 /* Expend.m */; };
 		0FA9F81E1908B92600473A9A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9F81C1908B92600473A9A /* Model.xcdatamodeld */; };
-		0FA9F8211908BA2D00473A9A /* Income.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9F8201908BA2D00473A9A /* Income.m */; };
-		0FA9F8241908BA4300473A9A /* Expend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9F8231908BA4300473A9A /* Expend.m */; };
+		840683431909155A004D02F5 /* Income.m in Sources */ = {isa = PBXBuildFile; fileRef = 840683421909155A004D02F5 /* Income.m */; };
 		848B03B019074AA900F4D74B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03AF19074AA900F4D74B /* Foundation.framework */; };
 		848B03B219074AA900F4D74B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03B119074AA900F4D74B /* CoreGraphics.framework */; };
 		848B03B419074AA900F4D74B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B03B319074AA900F4D74B /* UIKit.framework */; };
@@ -133,11 +133,11 @@
 		0FA3B0021908EF8500E74D32 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		0FA3B0031908EF8500E74D32 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		0FA3B01E1908EFBD00E74D32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0FA3B023190918E100E74D32 /* Expend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expend.h; sourceTree = "<group>"; };
+		0FA3B024190918E100E74D32 /* Expend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expend.m; sourceTree = "<group>"; };
 		0FA9F81D1908B92600473A9A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		0FA9F81F1908BA2D00473A9A /* Income.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Income.h; sourceTree = "<group>"; };
-		0FA9F8201908BA2D00473A9A /* Income.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Income.m; sourceTree = "<group>"; };
-		0FA9F8221908BA4300473A9A /* Expend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expend.h; sourceTree = "<group>"; };
-		0FA9F8231908BA4300473A9A /* Expend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expend.m; sourceTree = "<group>"; };
+		840683411909155A004D02F5 /* Income.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Income.h; sourceTree = "<group>"; };
+		840683421909155A004D02F5 /* Income.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Income.m; sourceTree = "<group>"; };
 		848B03AC19074AA900F4D74B /* ManagerMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagerMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848B03AF19074AA900F4D74B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		848B03B119074AA900F4D74B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -346,13 +346,13 @@
 				848B03E219074C1F00F4D74B /* incomeViewController.m */,
 				848B040319076E4D00F4D74B /* insertViewController.h */,
 				848B040419076E4D00F4D74B /* insertViewController.m */,
+				840683411909155A004D02F5 /* Income.h */,
+				0FA3B023190918E100E74D32 /* Expend.h */,
+				0FA3B024190918E100E74D32 /* Expend.m */,
+				840683421909155A004D02F5 /* Income.m */,
 				848B04541908A3B400F4D74B /* BLViewController.h */,
 				848B04551908A3B400F4D74B /* BLViewController.m */,
 				0FA9F81C1908B92600473A9A /* Model.xcdatamodeld */,
-				0FA9F81F1908BA2D00473A9A /* Income.h */,
-				0FA9F8201908BA2D00473A9A /* Income.m */,
-				0FA9F8221908BA4300473A9A /* Expend.h */,
-				0FA9F8231908BA4300473A9A /* Expend.m */,
 				848B03E719074D8E00F4D74B /* Model */,
 				848B03C119074AA900F4D74B /* Images.xcassets */,
 				848B03F31907641A00F4D74B /* images */,
@@ -525,14 +525,13 @@
 				848B03C019074AA900F4D74B /* BLAppDelegate.m in Sources */,
 				0FA3B00A1908EF8500E74D32 /* NSString+MagicalDataImport.m in Sources */,
 				0FA3B0141908EF8500E74D32 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
-				0FA9F8211908BA2D00473A9A /* Income.m in Sources */,
 				848B03BC19074AA900F4D74B /* main.m in Sources */,
-				0FA9F8241908BA4300473A9A /* Expend.m in Sources */,
 				848B04561908A3B400F4D74B /* BLViewController.m in Sources */,
 				0FA3B01A1908EF8500E74D32 /* MagicalRecord+Options.m in Sources */,
 				0FA3B0191908EF8500E74D32 /* MagicalRecord+iCloud.m in Sources */,
 				0FA3B0101908EF8500E74D32 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				848B03E619074D8500F4D74B /* MyCell.m in Sources */,
+				0FA3B025190918E100E74D32 /* Expend.m in Sources */,
 				0FA3B0051908EF8500E74D32 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				0FA3B0081908EF8500E74D32 /* NSObject+MagicalDataImport.m in Sources */,
 				0FA3B0151908EF8500E74D32 /* NSPersistentStore+MagicalRecord.m in Sources */,
@@ -557,6 +556,7 @@
 				848B03F019075D0D00F4D74B /* MyCell2.m in Sources */,
 				0FA3B01B1908EF8500E74D32 /* MagicalRecord+Setup.m in Sources */,
 				0FA3B0071908EF8500E74D32 /* NSNumber+MagicalDataImport.m in Sources */,
+				840683431909155A004D02F5 /* Income.m in Sources */,
 				0FA3B01D1908EF8500E74D32 /* MagicalRecord.m in Sources */,
 				0FA3B01C1908EF8500E74D32 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				0FA3B0161908EF8500E74D32 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,

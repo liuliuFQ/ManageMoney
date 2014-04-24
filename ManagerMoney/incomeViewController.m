@@ -27,26 +27,45 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     [self.view addSubview:self.tableView];
+//    [self addMoneyRecode];
+    [self findMoney];
     
+}
+-(void)viewWillAppear:(BOOL)animated{
+    
+    Income * incomeM = [[Income MR_findAll]lastObject];
+    Expend * ex = [[Expend MR_findAll]lastObject];
+    self.inco = [[NSNumber alloc]init];
+    self.inco = incomeM.money;
+    self.expen = ex.money;
+    [self.tableView reloadData];
+    
+    NSLog(@"%@-----%@",incomeM.money,ex.money);
+
+
+
+
 }
 #pragma mark--数据库处理
 /**
  *  查找
  */
--(void)findMoney{
+-( void)findMoney{
     NSArray * incomeArray = [Income MR_findAll];
     Income * incomeM = [Income MR_findFirst];
-    NSLog(@"-----%s----%@---%@",__FUNCTION__,incomeArray,incomeM);
+    NSLog(@"-----%s----%@---%@",__FUNCTION__,incomeArray,incomeM.category);
     
 }
+
 /**
  *  存储记录
  */
 -(void)addMoneyRecode{
     Income * incomeF =[Income MR_createEntity];
     incomeF.money = @600;
-    incomeF.category = @"";
-    [[NSManagedObjectContext MR_defaultContext]MR_saveOnlySelfAndWait];
+    incomeF.category = @"123";
+    incomeF.date = [NSDate date];
+    [[NSManagedObjectContext MR_defaultContext]MR_saveToPersistentStoreAndWait];
     
     
 }
@@ -97,8 +116,13 @@
             cell=[[MyCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         }
         cell.label11.text=@"收入总额:";
+        cell.label12.text = [self.inco stringValue];
+     
+        [cell.label12 setFrame4LabelWithorigin:CGPointMake(200, 10)];
         [cell.label11 setFrame4LabelWithorigin:CGPointMake(10, 10)];
         cell.label21.text=@"支出总额:";
+        cell.label22.text = [self.expen stringValue];
+        [cell.label22 setFrame4LabelWithorigin:CGPointMake(200, 45)];
         [cell.label21 setFrame4LabelWithorigin:CGPointMake(10, 45)];
         return cell;
     }else if (indexPath.section==1){
@@ -115,6 +139,8 @@
         return cell1;
     }else if (indexPath.section==2){
         static NSString *identifier2=@"789";
+         NSArray * exArray = [Expend MR_findAllSortedBy:@"data" ascending:NO];
+        NSArray * incomeArray = [Income MR_findAllSortedBy:@"date" ascending:NO];
         MyCell2 *cell2=[tableView dequeueReusableCellWithIdentifier:identifier2];
         if (!cell2) {
             cell2=[[MyCell2 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier2];
@@ -122,11 +148,22 @@
         cell2.ImageView.image=[UIImage imageNamed:@"sync_notice_laugh_icon"];
         cell2.MyLabel.text=@"刘阳";
         [cell2.MyLabel setFrame4LabelWithorigin:CGPointMake(60, 15)];
-        cell2.incomeLabel.text=@"12元";
-        [cell2.incomeLabel setFrame4LabelWithorigin:CGPointMake(270, 10)];
-        cell2.payLabel.text=@"100元";
-        [cell2.payLabel setFrame4LabelWithorigin:CGPointMake(270, 30)];
-        return cell2;
+      
+        if ([exArray count] > indexPath.row  ) {
+            
+            Expend * str2 = exArray[indexPath.row] ;
+            cell2.payLabel.text=[str2.money stringValue];
+            [cell2.payLabel setFrame4LabelWithorigin:CGPointMake(270, 30)];
+
+        }
+        if ([incomeArray count]  > indexPath.row) {
+            Income * str1 = incomeArray[indexPath.row];
+            cell2.incomeLabel.text=[str1.money stringValue];
+            [cell2.incomeLabel setFrame4LabelWithorigin:CGPointMake(270, 10)];
+
+        }
+        
+                return cell2;
     }
     return nil;
 }

@@ -10,6 +10,8 @@
 #import "SDSegmentedControl.h"
 #import "BLViewController.h"
 #import "UILabel+AutoSize.h"
+#import "Income.h"
+#import "Expend.h"
 @interface insertViewController ()<UITextFieldDelegate>
 
 @end
@@ -53,15 +55,47 @@
     [self.mySegment addTarget:self action:@selector(changeLabel) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.mySegment];
     //添加自定义键盘
-    
-    UIView *barView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
-    self.textField22.inputAccessoryView=barView;
-    
-    UIDatePicker *piker=[[UIDatePicker alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
-    self.textField22.inputView=piker;
+    self.pickerView=[[UIPickerView alloc]initWithFrame:CGRectMake(0, -200, 230, 160)];
+    self.pickerView.dataSource=self;
+    self.pickerView.delegate=self;
+    self.textField22.inputView=self.pickerView;
+    [self pickerDatas];
+    [self.view addSubview:self.pickerView];
+   
     
 }
+/**
+ *  存储记录
+ */
+-(void)addMoneyRecode{
+    Income * incomeF =[Income MR_createEntity];
+    incomeF.money = @600;
+    incomeF.category = @"123";
+    [[NSManagedObjectContext MR_defaultContext]MR_saveToPersistentStoreAndWait];
+    
+    
+}
+#pragma mark-UIPickerViewDataSource代理方法
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
 
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    return [self.arr objectAtIndex:row];
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [self.arr count];
+}
+
+-(void)pickerDatas{
+    self.arr=[[NSMutableArray alloc]initWithObjects:@"工资",@"红利",@"卖艺",@"耍猴",nil];
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    self.textField22.text=[self.arr objectAtIndex:row];
+}
 -(void)changeLabel{
     if (self.mySegment.selectedSegmentIndex==0) {
         self.label11.text=@"收入";
@@ -71,7 +105,29 @@
 }
 
 -(void)showModel{
-    NSLog(@"hah");
+   
+   
+    
+
+    if (self.mySegment.selectedSegmentIndex == 1){
+        Expend * ex = [Expend MR_createEntity];
+        ex.money =[NSNumber numberWithFloat:[self.textField12.text integerValue]] ;
+        ex.category = self.textField22.text;
+        ex.data = [NSData data];
+
+        
+    
+    }else{
+         NSLog(@"hah");
+    Income * incomeF =[Income MR_createEntity];
+    incomeF.money = [NSNumber numberWithFloat:[self.textField12.text integerValue]] ;
+    incomeF.category = self.textField22.text;
+    incomeF.date = [NSDate date];
+    }
+    
+   [[NSManagedObjectContext MR_defaultContext]MR_saveToPersistentStoreAndWait];
+
+    
 }
 
 #pragma mark--UITextFieldDelegate代理方法

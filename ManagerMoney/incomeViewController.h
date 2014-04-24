@@ -10,4 +10,7 @@
 
 @interface incomeViewController : UIViewController
 @property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)NSNumber * inco;
+@property(nonatomic,strong)NSNumber * expen;
+
 @end

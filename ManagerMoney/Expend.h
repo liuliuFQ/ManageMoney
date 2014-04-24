@@ -12,7 +12,8 @@
 
 @interface Expend : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * money;
 @property (nonatomic, retain) NSString * category;
+@property (nonatomic, retain) NSNumber * money;
+@property (nonatomic, retain) NSDate * data;
 
 @end

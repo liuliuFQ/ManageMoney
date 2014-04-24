@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface insertViewController : UIViewController
+@interface insertViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+@property(nonatomic,strong)NSMutableArray * arr;
+
 @property(nonatomic,strong)UILabel *label11;
 @property(nonatomic,strong)UILabel *label21;
 @property(nonatomic,strong)UITextField *textField12;

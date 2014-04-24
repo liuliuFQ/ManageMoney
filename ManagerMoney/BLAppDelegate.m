@@ -8,7 +8,7 @@
 
 #import "BLAppDelegate.h"
 #import "incomeViewController.h"
-
+#import "Income.h"
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,10 +17,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [MagicalRecord setupCoreDataStack];
+
     UINavigationController *naiVC1=[[UINavigationController alloc]initWithRootViewController:[[incomeViewController alloc] init]];
     self.window.rootViewController=naiVC1;
     
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Money.sqlite"];
 
     
     return YES;
