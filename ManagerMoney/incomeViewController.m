@@ -11,7 +11,8 @@
 #import "UILabel+AutoSize.h"
 #import "MyCell.h"
 #import "MyCell2.h"
-
+#import "Income.h"
+#import "Expend.h"
 @interface incomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -28,6 +29,47 @@
     [self.view addSubview:self.tableView];
     
 }
+#pragma mark--数据库处理
+/**
+ *  查找
+ */
+-(void)findMoney{
+    NSArray * incomeArray = [Income MR_findAll];
+    Income * incomeM = [Income MR_findFirst];
+    NSLog(@"-----%s----%@---%@",__FUNCTION__,incomeArray,incomeM);
+    
+}
+/**
+ *  存储记录
+ */
+-(void)addMoneyRecode{
+    Income * incomeF =[Income MR_createEntity];
+    incomeF.money = @600;
+    incomeF.category = @"";
+    [[NSManagedObjectContext MR_defaultContext]MR_saveOnlySelfAndWait];
+    
+    
+}
+/**
+ *  更新记录
+ */
+//-(void)updateMoney{
+//Income * incomeM = [Income MR_findFirstByAttribute:<#(NSString *)#> withValue:<#(id)#>];
+//   incomeM.money = @600;
+//      [[NSManagedObjectContext MR_defaultContext]MR_saveOnlySelfAndWait];
+//
+//
+//}
+/**
+ *  删除记录
+ */
+//-(void)deleteMoney{
+//Income * incomeM = [Income MR_findFirstByAttribute:<#(NSString *)#> withValue:<#(id)#>];
+//    [incomeM MR_deleteEntity];
+//      [[NSManagedObjectContext MR_defaultContext]MR_saveOnlySelfAndWait];
+//
+//
+//}
 
 #pragma mark-UITableViewDataSource代理方法
 

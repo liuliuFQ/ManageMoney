@@ -19,6 +19,10 @@
     [self.window makeKeyAndVisible];
     UINavigationController *naiVC1=[[UINavigationController alloc]initWithRootViewController:[[incomeViewController alloc] init]];
     self.window.rootViewController=naiVC1;
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Money.sqlite"];
+
+    
     return YES;
 }
 
