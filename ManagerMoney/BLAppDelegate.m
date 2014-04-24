@@ -7,6 +7,7 @@
 //
 
 #import "BLAppDelegate.h"
+#import "incomeViewController.h"
 
 @implementation BLAppDelegate
 
@@ -16,6 +17,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    UINavigationController *naiVC1=[[UINavigationController alloc]initWithRootViewController:[[incomeViewController alloc] init]];
+    self.window.rootViewController=naiVC1;
     return YES;
 }
 
