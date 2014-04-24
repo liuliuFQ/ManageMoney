@@ -30,6 +30,7 @@
     
     self.textField12=[[UITextField alloc]initWithFrame:CGRectMake(110, 135, 130, 30)];
     self.textField12.borderStyle=UITextBorderStyleRoundedRect;
+    self.textField12.keyboardType=UIKeyboardTypeNumberPad;
     self.textField12.delegate=self;
     
     self.textField22=[[UITextField alloc]initWithFrame:CGRectMake(110, 175, 130, 30)];
@@ -51,6 +52,13 @@
     self.mySegment.tintColor=[UIColor purpleColor];
     [self.mySegment addTarget:self action:@selector(changeLabel) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.mySegment];
+    //添加自定义键盘
+    
+    UIView *barView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+    self.textField22.inputAccessoryView=barView;
+    
+    UIDatePicker *piker=[[UIDatePicker alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
+    self.textField22.inputView=piker;
     
 }
 
